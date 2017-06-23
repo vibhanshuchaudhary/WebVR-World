@@ -1,0 +1,37 @@
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>Vibhanshu Scene 6</title>
+    <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+     <a-assets>
+       <img id="fire" src="fire.png" />
+       <img id="img6" src="img6.png" />
+       <img id="img61" src="img61.jpg" />
+     </a-assets>
+  <a-entity>
+    <a-animation attribute="position" from="-45 4 -15" to="5 4 -15" repeat="indefinite"></a-animation>
+     <a-image position="-16 4 -15" height="15" width="15"  src="#fire"></a-image>
+     </a-entity>
+     <a-entity>
+    <a-animation attribute="position" from="77 4 -15" to="22 4 -15" repeat="indefinite"></a-animation>
+     <a-image position="-16 4 -15" height="12" width="15"  src="#img6"></a-image>
+     </a-entity>
+     <a-entity position="-5 -5 -15">
+            <a-entity geometry="primitive: sphere; radius: 1" position="-1 1 0" material="color: #d50f25">
+                <a-animation attribute="position" from="-30 1 -15" to="19 1 -15" duration="3000" direction="normal" repeat="indefinite"></a-animation></a-entity>
+            <a-entity geometry="primitive: sphere; radius: 1" position="1 1 0" material="color: #009939">
+                <a-animation attribute="position" from="40 1 -15" to="1 1 -15" duration="3000" direction="normal" repeat="indefinite"></a-animation></a-entity>
+            <a-entity geometry="primitive: sphere; radius: 1" position="-1 1 0" material="color: #3369e8">
+                <a-animation attribute="position" from="-30 -8 -15" to="19 -8 -15" duration="3000" direction="reverse" repeat="indefinite"></a-animation></a-entity>    
+            <a-entity geometry="primitive: sphere; radius: 1" position="1 1 0" material="color: #eeb211">
+                <a-animation attribute="position" from="40 -8 -15" to="1 -8 -15" duration="3000" direction="reverse" repeat="indefinite"></a-animation></a-entity>
+
+
+     <a-sky src="#img61"></a-sky>
+     
+    </a-scene>
+  </body>
+</html>
